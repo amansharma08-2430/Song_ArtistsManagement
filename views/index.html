@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Music CRUD APP</title>
+</head>
+<body>  
+    <!-- header -->
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="nav-brand text-dark">User Management System</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+     <!--/ header -->
+     <!--Main-->
+     <main id="site-main">
+         <div class="container">
+             <div class="box-nav d-flex justify-between">
+                 <h2><b>Top 10 Songs</b></h2>
+                 <a href="/add-song" class="border-shadow">
+                    <span class="text-gradient"><i class="fa-solid fa-plus"></i>  Add Song</span>
+                 </a>
+             </div>
+             <!--form handling-->
+             <form action="/" method="POST">
+                 <table class="table">
+                     <thead class="thead-dark">
+                         <tr>
+                             <th>Artwork</th>
+                             <th>Song</th>
+                             <th>Date of Release</th>
+                             <th>Artist</th>
+                             <th>Rate</th>
+
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>Photo</td>
+                             <td>Someone You Loved</td>
+                             <td>July 21, 2019</td>
+                             <td>Lewis Capaldi</td>
+                             <td>Active</td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </form>
+
+         </div>
+     </main>
+     <!--/Main-->
+     </body>
+     </html>

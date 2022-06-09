@@ -1,0 +1,36 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+<main id="site-main">
+         <div class="container">
+             <div class="box-nav d-flex justify-between">
+                 <h2><b>Top 10 Songs</b></h2>
+                 <a href="/add-song" class="border-shadow">
+                    <span class="text-gradient"><i class="fa-solid fa-plus"></i>  Add Song</span>
+                 </a>
+             </div>
+             <!--form handling-->
+             <form action="/" method="POST">
+                 <table class="table">
+                     <thead class="thead-dark">
+                         <tr>
+                             <th>Artwork</th>
+                             <th>Song</th>
+                             <th>Date of Release</th>
+                             <th>Artist</th>
+                             <th>Rate</th>
+                            <%-include('include/_show')%>
+                         </tr>
+                     </thead>
+                     <tbody>
+                       
+                     </tbody>
+                 </table>
+             </form>
+         <%=users %>
+
+         </div>
+     </main>
+<!--include footer-->
+<%-include('include/_footer')%>
+<!--/include footer-->

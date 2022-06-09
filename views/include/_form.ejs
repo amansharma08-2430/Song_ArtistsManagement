@@ -1,0 +1,33 @@
+<form action="/api/users" enctype="multipart/form-data" method="POST" id="update_song">
+                  <div class="new_Song" id="add_Song">
+                     <div class="form-group">
+                         <label for="name" class="text-dark">Song Name</label>
+                         <input type="hidden" name="id" value="">
+                         <input type="text" name="name" value="" placeholder="Sky Full of Stars">
+                     </div>
+                     <div class="form-group">
+                         <label for="Release Date" class="text-dark">Release Date</label>
+                         <input type="text" name="release_date" placeholder="8 June 2022">
+                     </div>
+                     <div class="form-group">
+                         <label for="image" class="text-dark">ArtWork</label>
+                         <input type="file" name="artist" accept="image/png, image/jpeg">
+                     </div>
+                     <div class="form-group">
+                        <label for="Artists" class="text-dark">Artists</label>
+                        <select name="Artists" id="artists">
+                        <option value="" disabled selected>Search</option>
+                         <option value="Neeti Mohan">Neeti Mohan</option>
+                         <option value="Arijit Singh">Arijit Singh</option>
+                         <option value="Shreya Ghoshal">Shreya Ghoshal</option>
+                         <option value="Armaan Malik">Armaan Malik</option>
+                        </select>
+                      <a href="add-artist"><span class="text-gradient"><i class="fa-solid fa-plus"></i>  Add Artist</span></a> 
+                     </div>
+                     <div class="form-group" style="text-align:center;">
+                         <button type="reset" class="btn">Cancel</button> 
+                         <button type="submit" class="btn">Save</button>
+                     </div>
+
+                 </div>
+             </form> 

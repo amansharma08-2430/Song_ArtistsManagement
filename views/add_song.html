@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Music CRUD APP</title>
+</head>
+<body>  
+    <!-- header -->
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="nav-brand text-dark">User Management System</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+     <!--/ header -->
+     <!--Main-->
+     <main id="site-main">
+         <div class="container">
+             <div class="box-nav d-flex justify-between">
+                 <div class="filter">
+                     <a href="/"><i class="fas fa-angle-double-left">All Songs</i></a>
+                 </div>
+             </div>
+             <div class="form-title text-center">
+                 <h2 class="text text-dark">New Song</h2>
+                
+             </div>
+             <!--form handling-->
+             <form method="POST" id="update_song">
+                  <div class="new_Song" id="add_Song">
+                     <div class="form-group">
+                         <label for="name" class="text-dark">Song Name</label>
+                         <input type="hidden" name="id" value="">
+                         <input type="text" name="name" value="" placeholder="Sky Full of Stars">
+                     </div>
+                     <div class="form-group">
+                         <label for="ReleaseDate" class="text-dark">Release Date</label>
+                         <input type="text" name="release_date" placeholder="8 June 2022">
+                     </div>
+                     <div class="form-group">
+                         <label for="image" class="text-dark">ArtWork</label>
+                         <input type="file" name="artist" accept="image/png, image/jpeg">
+                     </div>
+                     <div class="form-group">
+                        <label for="Artists" class="text-dark">Artists</label>
+                        <select name="Artists" id="artists">
+                        <option value="" disabled selected>Search</option>
+                         <option value="Neeti Mohan">Neeti Mohan</option>
+                         <option value="Arijit Singh">Arijit Singh</option>
+                         <option value="Shreya Ghoshal">Shreya Ghoshal</option>
+                         <option value="Armaan Malik">Armaan Malik</option>
+                        </select>
+                      <a href="add-artist"><span class="text-gradient"><i class="fa-solid fa-plus"></i>  Add Artist</span></a> 
+                     </div>
+                     <div class="form-group" style="text-align:center;">
+                         <button type="reset" class="btn">Cancel</button> 
+                         <button type="submit" class="btn">Save</button>
+                     </div>
+
+                 </div>
+             </form>
+
+         </div>
+     </main>
+     <!--/Main-->
+     </body>
+     </html>
